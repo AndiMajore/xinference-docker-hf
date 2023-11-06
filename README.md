@@ -11,4 +11,4 @@ This project allows easy deployment of any huggingface LLM using [xinference](ht
 5. Optional: Depending on what you want to run from huggingface you need to adjust:
   -  The (xinference) [config.json file](https://github.com/AndiMajore/xinference-docker-hf/blob/master/llama2-7b-chat-hf.json): See details [here](https://inference.readthedocs.io/en/latest/models/custom.html)
   -  The [env file](https://github.com/AndiMajore/xinference-docker-hf/blob/master/llama2_7b_chat_hf.env.example)
-  -  The download_register_and_launch.sh file, in case you need to add launch params
+  -  The [download_register_and_launch.sh](https://github.com/AndiMajore/xinference-docker-hf/blob/master/download_register_and_launch.sh) file, in case you need to add launch params
