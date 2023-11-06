@@ -1,10 +1,9 @@
 services:
   xinference:
-    image: xinference_hf
+    image: andimajore/xinference_hf:0.6.1
     container_name: xinference_hf
     build: .
     command: bash launch_script.sh
-#    command: tail -f /dev/null
     restart: always
     env_file:
       - llama2_7b_chat_hf.env
