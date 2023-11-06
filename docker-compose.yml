@@ -1,7 +1,7 @@
 services:
   xinference:
-    image: xinference_single_llm
-    container_name: xinference_single_llm
+    image: xinference_hf
+    container_name: xinference_hf
     build: .
     command: bash launch_script.sh
 #    command: tail -f /dev/null
