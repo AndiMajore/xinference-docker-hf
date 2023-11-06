@@ -1,0 +1,21 @@
+services:
+  xinference:
+    image: xinference_single_llm
+    container_name: xinference_single_llm
+    build: .
+    command: bash launch_script.sh
+#    command: tail -f /dev/null
+    restart: always
+    env_file:
+      - llama2_7b_chat_hf.env
+    volumes:
+      - /cosybio/project/LLM/xinference_configs/llama2-7b-chat-hf.json:/config.json
+    ports:
+      - "9997:9997"
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - driver: nvidia
+              count: 2
+              capabilities: [gpu]
