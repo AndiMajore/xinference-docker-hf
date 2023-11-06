@@ -9,7 +9,7 @@ services:
     env_file:
       - llama2_7b_chat_hf.env
     volumes:
-      - /cosybio/project/LLM/xinference_configs/llama2-7b-chat-hf.json:/config.json
+      - ./llama2-7b-chat-hf.json:/config.json
     ports:
       - "9997:9997"
     deploy:
