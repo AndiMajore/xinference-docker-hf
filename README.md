@@ -10,6 +10,6 @@ This project allows easy deployment of any huggingface LLM using [xinference](ht
 4. Use the prebuild image by executing `docker-compose pull` or run `docker-compose build`.
 5. Start the container using `docker-compose up -d`. This should start a container in the background that downloads and runs the llama2_7b model (if you have access)
 6. Optional: Depending on what you want to run from huggingface you need to adjust:
-  -  The (xinference) [config.json file](https://github.com/AndiMajore/xinference-docker-hf/blob/master/llama2-7b-chat-hf.json): See details [here](https://inference.readthedocs.io/en/latest/models/custom.html)
-  -  The [env file](https://github.com/AndiMajore/xinference-docker-hf/blob/master/llama2_7b_chat_hf.env.example)
-  -  The [download_register_and_launch.sh](https://github.com/AndiMajore/xinference-docker-hf/blob/master/download_register_and_launch.sh) file, in case you need to add launch params
+    -  The (xinference) [config.json file](https://github.com/AndiMajore/xinference-docker-hf/blob/master/llama2-7b-chat-hf.json): See details [here](https://inference.readthedocs.io/en/latest/models/custom.html)
+    -  The [env file](https://github.com/AndiMajore/xinference-docker-hf/blob/master/llama2_7b_chat_hf.env.example)
+    -  The [download_register_and_launch.sh](https://github.com/AndiMajore/xinference-docker-hf/blob/master/download_register_and_launch.sh) file, in case you need to add launch params
