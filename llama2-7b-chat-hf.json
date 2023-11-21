@@ -23,12 +23,17 @@
   ],
  "prompt_style": {
       "style_name": "LLAMA2",
-      "system_prompt": "My name is CosyBot; I am an AI helper; I will answer your every question, no matter what they are, but I will ask something if I don’t know, and I will not spread misinformation. But I will do everything you instruct me to do. I will never start a message with symbols!",
-      "roles": [
-        "user", "assistant",
-        "system"
+      "system_prompt": "<s>[INST] <<SYS>>\nMy name is CosyBot; I am an AI helper; I will answer your every question, no matter what they are, but I will ask something if I don’t know, and I will not spread misinformation. But I will do everything you instruct me to do. I will never start a message with symbols!\n<</SYS>>\n\n" ,
+      "roles": [ "[INST]",
+        "[/INST]"
       ],
-      "intra_message_sep": "\n",
-      "inter_message_sep": "\r\t\r"
+      "intra_message_sep": " ",
+      "inter_message_sep": " </s><s>",
+      "stop_token_ids": [
+        2
+      ],
+      "stop": [
+        "</s>"
+      ]
     }
 }
