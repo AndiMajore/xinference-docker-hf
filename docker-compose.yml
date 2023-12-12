@@ -1,6 +1,6 @@
 services:
   xinference:
-    image: andimajore/xinference_hf:0.6.3
+    image: andimajore/xinference_hf:0.7.1
     container_name: xinference_hf
     build: .
     command: bash launch_script.sh
